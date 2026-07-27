@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9ec4,#ffc7d9,#ffeef5);
+overflow-x:hidden;
+color:#fff;
+scroll-behavior:smooth;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+pointer-events:none;
+z-index:0;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
+position:relative;
+z-index:2;
+text-align:center;
+}
+
+h1{
+font-family:"Great Vibes",cursive;
+font-size:70px;
+margin-bottom:20px;
+}
+
+h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+p{
+max-width:800px;
+font-size:20px;
+line-height:1.8;
+}
+
+button{
+margin-top:40px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:#fff;
+color:#ff4d88;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+.timeline{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+width:90%;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,.18);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+width:90%;
+margin-top:30px;
+}
+
+.gallery img{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+#final{
+background:#111;
+}
+
+.hidden{
+display:none;
+}
+
+.finalMessage{
+font-family:"Great Vibes";
+font-size:60px;
+margin-bottom:30px;
+color:#ff77aa;
+}
+
+.letter{
+font-size:22px;
+max-width:850px;
+line-height:2;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#000;
+}
+
+.hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+pointer-events:none;
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+opacity:1;
+}
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<section>
+
+<h1 id="typing"></h1>
+
+<p>
+Welcome to our little corner of the internet.
+Every moment with you has made my life brighter,
+and I wanted to create something that lasts forever.
+</p>
+
+<button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+Begin Our Journey ❤️
+</button>
+
+</section>
+
+<section id="story">
+
+<h2>Our memories</h2>
+
+<div class="timeline">
+
+<div class="card">
+<h3>💕 We Met</h3>
+<p>ungg sister gi ming kei kwge.</p>
+</div>
+
+<div class="card">
+<h3>🌹 talking</h3>
+<p>went for 4-5 hours straight.</p>
+</div>
+
+<div class="card">
+<h3>😂 Our Best Moment</h3>
+<p>staring at you whileyou were sleeping.</p>
+</div>
+
+<div class="card">
+<h3>❤️ Today</h3>
+<p>Every day with you is my favourite day.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Reasons I Love You</h2>
+
+<div class="timeline">
+
+<div class="card">❤️ Your smile</div>
+<div class="card">🌸 Your kindness</div>
+<div class="card">😊 Your laugh</div>
+<div class="card">✨ Your heart</div>
+<div class="card">🥰 You always support me</div>
+<div class="card">🌎 You make life beautiful</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Our Memories</h2>
+
+<p style="margin-top:25px;">
+look at my babyy she's soo cute.
+</p>
+
+</section>
+
+<section>
+
+<h2>A Letter For You ❤️</h2>
+
+<p class="letter">
+
+My love,
+
+Thank you for being my happiness.
+
+Thank you for believing in me even when I didn't believe in myself.
+
+Thank you for every smile,
+every day,
+every laugh,
+and every beautiful memory.
+
+You have made my life more colourful than I ever imagined.
+
+If I could choose again,
+I would choose you every single time.
+
+Forever.
+
+❤️
+
+</p>
+
+<button onclick="showFinal()">
+Open My Final Surprise 🎁
+</button>
+
+</section>
+
+<section id="final" class="hidden">
+
+<div class="finalMessage">
+To My Forever ❤️
+</div>
+
+<p class="letter">
+
+If someone asked me what happiness looks like...
+
+I'd simply show them a picture of you.
+
+You are my favourite person,
+my biggest blessing,
+my safest place,
+and my greatest adventure.
+
+No matter where life takes us,
+my heart will always find its way back to you.
+
+I promise to keep loving you,
+supporting you,
+making you laugh,
+and creating beautiful memories together.
+
+Thank you for existing.
+
+I love you more than words could ever describe.
+
+❤️
+
+Forever Yours,
+
+<b>Your Hanuba</b>
+
+</p>
+
+</section>
+
+<footer>
+
+Made with endless love ❤️
+
+</footer>
+
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+const text="Hi Beautiful ❤️";
+let i=0;
+
+function type(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(type,120);
+}
+}
+
+type();
+
+function showFinal(){
+document.getElementById("final").classList.remove("hidden");
+document.getElementById("final").scrollIntoView({behavior:"smooth"});
+confetti();
+}
+
+const hearts=document.querySelector(".hearts");
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=3+Math.random()*5+"s";
+
+heart.style.fontSize=(15+Math.random()*30)+"px";
+
+hearts.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHeart,300);
+
+function confetti(){
+
+for(let i=0;i<250;i++){
+
+setTimeout(createHeart,i*20);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
